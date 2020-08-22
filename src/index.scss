@@ -1,0 +1,193 @@
+/** global scss variable */
+
+/** import file from modules */
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "~animate.css/animate.min.css";
+@import "~video-react/styles/scss/video-react";
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  background-color: #d8d8d842 !important;
+  height: 100%;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+.f-w-600 {
+  font-weight: 600 !important;
+}
+
+.f-12 {
+  font-size: 12px;
+}
+
+.f-13 {
+  font-size: 13px;
+}
+
+.f-14 {
+  font-size: 14px;
+}
+
+.f-15 {
+  font-size: 15px;
+}
+
+.f-16 {
+  font-size: 16px !important;
+}
+
+.f-18 {
+  font-size: 18px;
+  @media screen and (max-width: 576px) {
+    font-size: 16px;
+  }
+}
+
+.f-20 {
+  font-size: 20px;
+}
+
+.f-22 {
+  font-size: 22px;
+}
+
+.f-24 {
+  font-size: 24px;
+  @media screen and (max-width: 576px) {
+    font-size: 18px;
+  }
+}
+
+.f-30 {
+  font-size: 30px;
+}
+
+.f-32 {
+  font-size: 32px;
+  @media screen and (max-width: 576px) {
+    font-size: 28px;
+  }
+}
+
+.f-35 {
+  font-size: 35px;
+  @media screen and (max-width: 576px) {
+    font-size: 30px;
+  }
+}
+
+.f-40 {
+  font-size: 40px;
+}
+
+.f-42 {
+  font-size: 42px;
+  @media screen and (max-width: 1024px) {
+    font-size: 25px;
+  }
+}
+
+.f-44 {
+  font-size: 44px;
+  @media screen and (max-width: 1024px) {
+    font-size: 27px;
+  }
+}
+
+.f-60 {
+  font-size: 60px;
+}
+
+.f-28 {
+  font-size: 28px;
+}
+
+@media screen and (max-width: 1024px) {
+  .f-30 {
+    font-size: 24px;
+  }
+  .f-20 {
+    font-size: 18px;
+  }
+  .f-22 {
+    font-size: 20px;
+  }
+  .f-16 {
+    font-size: 15px !important;
+  }
+  .f-16 {
+    font-size: 14px;
+  }
+  .f-60 {
+    font-size: 38px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .f-30 {
+    font-size: 22px;
+  }
+  .f-20 {
+    font-size: 16px;
+  }
+  .f-22 {
+    font-size: 16px;
+  }
+  .f-14 {
+    font-size: 12px;
+  }
+  .f-16 {
+    font-size: 14px !important;
+  }
+  .f-12 {
+    font-size: 11px;
+  }
+  .f-28 {
+    font-size: 20px;
+  }
+  .f-60 {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 350px){
+  .f-28 {
+    font-size: 19px;
+  }
+}
+
+.side-wrapper {
+  width: 220px;
+}
+.conant-wrapper {
+  width: 100%;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.c-gray-1 {
+  color: #cfcfcf;
+}
+
+.circle-loader {
+    position: absolute;
+    top: 50%; right: 50%;
+    transform: translate(50%,-50%);
+}
+
+.max-line-1 {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

@@ -1,0 +1,12 @@
+.sidebar-con {
+  background-color: rgba(126, 160, 179, 0.18);
+  min-height: calc(100vh - 96px);
+  ul {
+    li {
+      background-color: rgba(126, 160, 179, 0.58);
+      margin: 10px 8px;
+      border-radius: 30px;
+      padding: 5px 9px;
+    }
+  }
+}

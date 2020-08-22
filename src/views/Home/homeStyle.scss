@@ -1,0 +1,33 @@
+.mapContainer {
+  height: 70vh;
+}
+
+.c-card-image {
+  height: 180px !important;
+  @media screen and (max-width: 767px){
+    height: 150px !important;
+  }
+}
+
+.c-slider {
+  .slick-list {
+    .slick-track {
+      margin-right: 0;
+      margin-left: 0;
+    }
+  }
+}
+
+.section-home {
+  .card {
+    border-radius: 0.75rem !important;
+    .slick-arrow {
+      z-index: 100;
+      background-color: rgba(0,0,0,0.5);
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      padding-top: 2px;
+    }
+  }
+}
