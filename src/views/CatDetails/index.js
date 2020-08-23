@@ -22,9 +22,78 @@ class CatDetails extends Component {
   render() {
 
     return (
-      <Sidebar />
+      <div className="container-fluid text-center p-0">
+        <div className='display-content'>
+          <Sidebar menu={this.props.menu} />
+        </div>
+        <div className="row  d-flex align-items-stretch">
+          <div className="col-12 col-md-6">
+            <MapComponent />
+          </div>
+          <div className="col-12 col-md-6">
+            {
+              this.state.graph ?
+                <RightLineChart />
+                :
+                <RightBarChart />
+            }
+
+          </div>
+          <div className="col-12 col-md-6">
+          </div>
+          <div className="col-12 col-md-6">
+            <button
+              type="button"
+              onClick={() => this.setState({ graph: !this.state.graph })}
+              className="btn"
+            >
+              <i className="fa fa-refresh" /> Switch Graph
+              </button>
+          </div>
+        </div>
+
+        {/* <div className="conant-wrapper d-flex flex-column">
+          <div
+            className="d-flex justify-content-between align-items-center py-3 text-white">
+            <span>
+              <i onClick={() => this.props.history.push('/')} className="fa fa-arrow-left ml-2 cursor-pointer" aria-hidden="true" title="Home" />
+            </span>
+            <span>
+              {this.props.menu}
+            </span>
+            <span>
+            </span>
+          </div>
+          <div className="row  d-flex align-items-stretch">
+            <div className="col-12 col-md-6">
+              <MapComponent />
+            </div>
+            <div className="col-12 col-md-6">
+              {
+                this.state.graph ?
+                  <RightLineChart />
+                  :
+                  <RightBarChart />
+              }
+            </div>
+            <div className="col-12 col-md-6">
+            </div>
+            <div className="col-12 col-md-6">
+              <button
+                type="button"
+                onClick={() => this.setState({ graph: !this.state.graph })}
+                className="btn"
+              >
+                <i className="fa fa-refresh" /> Switch Graph
+              </button>
+            </div>
+          </div>
+        </div> */}
+      </div>
+
       // <div className="container-fluid d-flex text-center p-0">
       //   <div className="side-wrapper d-flex">
+      //     {/* <Sidebar /> */}
       //   </div>
       //   <div className="conant-wrapper d-flex flex-column">
       //     <div style={{ backgroundColor: 'rgb(0, 122, 217)' }}
